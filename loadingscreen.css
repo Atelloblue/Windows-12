@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loading-container {
+    text-align: center;
+}
+
+.windows-logo {
+    width: 500px; /* Adjust size as necessary */
+    margin-bottom: -100px; /* Reduced space below the logo */
+    margin-top: -150px; /* You can also set a margin-top if needed */
+}
+
+.loading-text {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.spinner {
+    position: relative;
+    width: 60px; /* Size of the spinner */
+    height: 60px; /* Size of the spinner */
+    margin: auto; /* Center the spinner */
+    margin-top: 320px;
+    margin-bottom: -30px;
+    border: 6px solid black; /* Faint white trail */
+    border-top: 6px solid white; /* White trail part */
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite; /* Spinner rotation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 Installation</title>
+    <style>
+        body {
+            background: url('background.jpeg') no-repeat center center; /* Background image only */
+            background-size: cover; /* Cover the entire viewport */
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            border-top: 50px solid #ccc;
+            border-bottom: 10px solid #ccc;
+            border-left: 10px solid #ccc;
+            border-right: 10px solid #ccc;
+            height: 425px;
+        }
+        h2 {
+            color: #170750;
+        }
+        button {
+            margin-top: 15%;
+            padding: 10px 20px;
+            border: 1px solid #A8BDD6;
+            border-radius: 4px;
+            background-color: #170750;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #1A1C6A;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .Activate {
+            color: #4A8AB8;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: -5px;
+            margin-left: -200px;
+        }
+        /* Progress Bar Styles */
+        .progress-container {
+            width: 1000px;
+            background: #ccc;
+            border-radius: 5px;
+            margin: 20px 0;
+            height: 35px;
+            margin-left: -100px;
+            margin-top: 280px;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0%; /* Set initial width to 0% */
+            background: green;
+            border-radius: 5px;
+            transition: width 0.4s ease;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px; /* Space above the dropdown */
+        }
+
+        .dropbtn {
+            background-color: #170750; /* Button color */
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            max-height: 200px; /* Limit height for scroll */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #5A94C8; /* Change background on hover */
+            color: white; /* Change text color on hover */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block; /* Show dropdown on hover */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="Activate">Select the operating system you want to install</h3>
+
+        <!-- Dropdown for OS selection -->
+        <div class="dropdown">
+            <button class="dropbtn">Select Windows OS</button>
+            <div class="dropdown-content">
+                <a href="#">Windows 12 Home</a>
+                <a href="#">Windows 12 Home N</a>
+                <a href="#">Windows 12 Home Single Language</a>
+                <a href="#">Windows 12 Education</a>
+                <a href="#">Windows 12 Education N</a>
+                <a href="#">Windows 12 Pro</a>
+                <a href="#">Windows 12 Pro N</a>
+                <a href="#">Windows 12 Game Optimized</a>
+                <a href="#">Windows 12 Game Optimized N</a>
+            </div>
+        </div>
+
+        <button type="button" onclick="window.location.href='select_os.html';">
+            <span class="underline">N</span>ext
+        </button>
+        
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width: 10%;"></div> <!-- Change width to represent progress -->
+        </div>
+    </div>
+    <h1 style="position: absolute; bottom: -20px; left: 120px;">1</h1>
+    <h5 style="position: absolute; bottom: 0px; left: 150px;">Collecting information</h5>
+    <h1 style="position: absolute; bottom: -20px; left: 330px;">2</h1>
+    <h5 style="position: absolute; bottom: 0px; left: 360px;">Installing Windows</h5>
+</body>
+</html>

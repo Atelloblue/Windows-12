@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 Installation</title>
+    <link rel="stylesheet" href="install.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            background-image: url('background.jpeg'); /* Set the background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: rgba(23, 7, 80, 0.5); /* Semi-transparent background */
+            padding: 40px; /* Increased padding */
+            border-radius: 8px;
+            width: 80%; /* Wider container */
+            max-width: 800px; /* Maximum width */
+            border-top:50px solid rgba(23, 7, 80, 0.5); /* Same color as background */
+            border-bottom: 10px solid rgba(23, 7, 80, 0.5); /* Same color as background */
+            border-left: 10px solid rgba(23, 7, 80, 0.5); /* Same color as background */
+            border-right: 10px solid rgba(23, 7, 80, 0.5); /* Same color as background */
+            height: 425px; /* Full height */
+            backdrop-filter: blur(10px); /* Blurs the content behind the container */
+        }
+        button {
+            padding: 10px 20px;
+            border: 1px solid #4A1E9F; /* Button border color */;
+            border-radius: 4px;
+            background-color: #4A1E9F; /* Windows 10 blue */;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15%;
+        }
+        button:hover {
+            background-color: #1A1C6A;
+        }
+        .underline {
+            text-decoration: underline; /* Underline the text */
+        }
+        .repair {
+            margin-top: -80px;
+            color: white;
+            margin-left: -650px;
+        }
+            .footer {
+               margin-top: 150px; 
+               margin-left: -550px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Windows_banner.jpeg" alt="Windows Logo" width="200">
+        <form>
+            <button type="button" onclick="window.location.href='Setup_starting.html';">
+                <span class="underline"">I</span>nstall now
+            </button>
+        </form>
+        <h6 class="footer">&copy; 2025 Microsoft Corporation. All rights reserved.</h6>
+        <div class="repair">
+        <span class="underline">R</span>epair your computer
+    </div>
+</body>
+</html>
